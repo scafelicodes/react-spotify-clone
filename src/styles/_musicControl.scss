@@ -1,0 +1,84 @@
+.MusicControl {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 10vh;
+	background: $spotify-lightgrey;
+
+	.MusicControlContainer {
+		width: 96%;
+		margin: 0 auto;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		color: $spotify-white;
+
+		.ControlLeft {
+			margin-left: auto;
+			flex: 1;
+		}
+
+		.ControlCenter {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			padding: 10px 0;
+			flex: 1;
+
+			.ControlPlay {
+				display: flex;
+				width: 50%;
+				margin: 6px auto;
+				justify-content: space-around;
+
+				.ControlPlayItem {
+					cursor: pointer;
+					margin: 0 30px;
+				}
+			}
+
+			.ControlSlider {
+				display: flex;
+				align-self: center;
+				color: $spotify-lightergrey;
+				padding: 8px;
+
+				.SongStartTime,
+				.SongEndTime {
+					margin: 2px 0px;
+					font-size: 12px;
+				}
+				.SongDurationSlider {
+					width: 400px;
+					border-radius: 4px;
+					height: 2px;
+					background: $spotify-lightergrey;
+					opacity: 0.4;
+					margin: 10px 20px;
+				}
+			}
+		}
+
+		.ControlRight {
+			display: flex;
+			flex: 1;
+			align-items: center;
+			margin-right: auto;
+			justify-content: flex-end;
+
+			.ControlRightItem {
+				margin: 0 6px;
+				cursor: pointer;
+
+				.ControlVolumeSlider {
+					width: 100px;
+					border-radius: 4px;
+					height: 2px;
+					background: $spotify-lightergrey;
+					opacity: 0.4;
+					margin-top: 4px;
+				}
+			}
+		}
+	}
+}

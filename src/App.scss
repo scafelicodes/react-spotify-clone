@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+$spotify-black: #000000;
+$spotify-darkergrey: #0a0a0a;
+$spotify-darkgrey: #121212;
+$spotify-grey: #181818;
+$spotify-lightgrey: #282828;
+$spotify-lightergrey: #b3b3b3;
+$spotify-white: #ffffff;
+$spotify-green: #55b05e;
+
+@import "./styles/navbar";
+@import "./styles/searchBar";
+@import "./styles/musicControl";
+
+@import "./styles/searchComponents/search";
+@import "./styles/searchComponents/topgenres";
+@import "./styles/searchComponents/browseall";
+
+@import "./styles/homeComponents/home";
+@import "./styles/homeComponents/shortcuts";
+@import "./styles/homeComponents/recentlyplayed";
+
+@import "./styles/library";
+@import "./styles/playlistsComponents/playlists";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Manrope", sans-serif;
+}
+
+.App {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background: $spotify-darkgrey;
+
+	h3 {
+		font-size: 24px;
+		color: $spotify-white;
+	}
+}
+
+.Pages {
+	position: fixed;
+	min-height: 90vh;
+	width: 80%;
+	top: 0;
+	padding: 84px 40px 100px 40px;
+	left: 20%;
+	background: $spotify-darkgrey;
+	overflow: scroll;
+
+	::-webkit-scrollbar {
+		display: none !important;
+	}
+}

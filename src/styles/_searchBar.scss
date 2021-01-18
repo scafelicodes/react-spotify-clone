@@ -1,0 +1,60 @@
+.SearchBar {
+	position: fixed;
+	top: 0;
+	left: 20%;
+	width: 80%;
+	height: 10vh;
+	z-index: 2;
+	padding: 0 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.NavIcons {
+		line-height: 10vh;
+		display: flex;
+
+		.NavIconItem {
+			margin: 0 10px;
+		}
+	}
+
+	.NavSearchArea {
+		line-height: 10vh;
+		width: 40%;
+		position: relative;
+		left: -14%;
+
+		input {
+			width: 100%;
+			background: $spotify-white;
+			padding: 10px 16px 9px 16px;
+			border-radius: 40px;
+			border: none;
+			outline: none;
+			font-size: 12px;
+		}
+	}
+
+	::-webkit-input-placeholder {
+		font-size: 12px;
+		font-weight: 500;
+		color: $spotify-lightergrey !important;
+	}
+
+	.NavUserInfo {
+		cursor: pointer;
+		margin: 2px 0 0 0;
+		display: flex;
+		background: $spotify-darkergrey;
+		padding: 8px 12px;
+		border-radius: 50px;
+		font-size: 12px;
+
+		span {
+			margin: 0px 6px 0px 8px;
+			color: $spotify-white;
+			font-weight: 700;
+		}
+	}
+}

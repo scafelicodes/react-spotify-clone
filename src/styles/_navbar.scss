@@ -1,0 +1,81 @@
+.Navbar {
+	background: $spotify-black;
+	width: 20%;
+	height: 90vh;
+	padding: 10px;
+	.NavbarItems {
+		.NavbarSubtitle {
+			color: $spotify-lightergrey;
+			font-size: 10px;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 1.6px;
+			padding: 12px;
+			margin-top: 12px;
+		}
+
+		.NavbarLogo {
+			margin: 8px 6px;
+			img {
+				max-width: 60%;
+			}
+		}
+
+		.NavbarLinks {
+			margin: 20px 0;
+
+			.NavbarLinkItem {
+				display: flex;
+				border-radius: 4px;
+				padding: 8px;
+
+				.NavbarLink {
+					display: flex;
+					text-decoration: none;
+				}
+
+				&:last-child {
+					position: absolute;
+					bottom: 12vh;
+				}
+
+				&:hover {
+					cursor: pointer;
+					transition: 0.4s;
+
+					.NavbarLinkItemIcon {
+						color: $spotify-white !important;
+					}
+					.NavbarLinkItemText {
+						color: $spotify-white;
+						transition: 0.4s;
+					}
+				}
+
+				.NavbarLinkItemIcon {
+					margin-right: 10px;
+					transition: 0.4s;
+				}
+
+				.NavbarLinkItemText {
+					color: $spotify-lightergrey;
+					font-size: 14px;
+					font-weight: bolder;
+					position: relative;
+					top: 4px;
+					transition: 0.4s;
+				}
+			}
+		}
+	}
+}
+
+.DownloadApp {
+	position: relative !important;
+	bottom: 0;
+}
+.is-active {
+	.NavbarLinkItemText {
+		color: $spotify-green !important;
+	}
+}

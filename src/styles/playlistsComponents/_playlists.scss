@@ -1,0 +1,117 @@
+.Playlists {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.PlayCards {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 14px;
+}
+
+.PlayCard {
+	cursor: pointer;
+	margin: 20px 0;
+	width: 200px;
+	height: 300px;
+	padding: 20px;
+	background: $spotify-grey;
+	display: flex;
+	flex-direction: column;
+	border-radius: 4px;
+
+	&:hover {
+		background: $spotify-lightgrey;
+	}
+
+	.card-one {
+		background: url("https://images.unsplash.com/photo-1597360492505-e134c3c82004?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2789&q=80")
+			no-repeat 50% 50%;
+		background-size: cover;
+	}
+
+	.card-two {
+		background: url("https://images.unsplash.com/photo-1592169396495-4dd22b8374d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80")
+			no-repeat 50% 50%;
+		background-size: cover;
+	}
+
+	.card-three {
+		background: url("https://images.unsplash.com/photo-1589081711003-9b5382b65980?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80")
+			no-repeat 50% 50%;
+		background-size: cover;
+	}
+
+	.card-four {
+		background: url("https://images.unsplash.com/photo-1577073315631-93a26e476fa4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80")
+			no-repeat 50% 50%;
+		background-size: cover;
+	}
+
+	.card-five {
+		background: url("https://images.unsplash.com/photo-1564001919979-02c3d69f10d5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80")
+			no-repeat 50% 50%;
+		background-size: cover;
+	}
+
+	.HomeCardImage {
+		width: 160px;
+		height: 180px;
+		box-shadow: 0px 0px 20px $spotify-darkgrey;
+	}
+
+	.HomeCardTitle {
+		color: $spotify-white;
+		font-weight: 700;
+		padding: 16px 0 10px 0;
+	}
+
+	.HomeCardGenre {
+		color: $spotify-lightergrey !important;
+		font-weight: 600;
+		font-size: 14px;
+	}
+}
+
+.CustomPlay {
+	display: flex;
+	justify-content: space-around;
+	width: 400px;
+	background: rgb(103, 71, 238);
+	background: linear-gradient(
+		180deg,
+		rgba(103, 71, 238, 1) 0%,
+		rgba(125, 111, 232, 1) 100%
+	);
+
+	&:hover {
+		background: rgb(103, 71, 238);
+		background: linear-gradient(
+			180deg,
+			rgba(103, 71, 238, 1) 0%,
+			rgba(125, 111, 232, 1) 100%
+		);
+	}
+
+	.PlayCardSongs {
+		color: #fff;
+		font-weight: 600;
+		letter-spacing: 0.4px;
+
+		span {
+			font-weight: 300;
+			color: $spotify-white;
+			opacity: 0.8;
+		}
+	}
+
+	.PlayCardTitle {
+		color: #fff;
+		padding-top: 40px;
+	}
+
+	.PlayCardLikedSongsText {
+		color: #fff;
+	}
+}

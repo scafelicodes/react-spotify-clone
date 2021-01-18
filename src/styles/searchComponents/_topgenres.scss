@@ -1,0 +1,85 @@
+.GenresSlider {
+	margin: 20px 0;
+
+	.SwiperSlide {
+		padding: 10px 18px;
+		height: 160px !important;
+		border-radius: 10px;
+		color: $spotify-white;
+		font-size: 30px;
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	.HipHopCard {
+		background: rgb(158, 101, 27);
+		background: linear-gradient(
+			180deg,
+			rgba(158, 101, 27, 1) 0%,
+			rgba(229, 144, 34, 1) 100%
+		);
+	}
+
+	.ElectronicCard {
+		background: rgb(96, 149, 140);
+		background: linear-gradient(
+			180deg,
+			rgba(96, 149, 140, 1) 0%,
+			rgba(150, 233, 219, 1) 100%
+		);
+	}
+
+	.RNBCard {
+		background: rgb(149, 36, 102);
+		background: linear-gradient(
+			180deg,
+			rgba(149, 36, 102, 1) 0%,
+			rgba(229, 54, 158, 1) 100%
+		);
+	}
+
+	.AlternativeCard {
+		background: rgb(52, 52, 52);
+		background: linear-gradient(
+			180deg,
+			rgba(52, 52, 52, 1) 0%,
+			rgba(80, 80, 80, 1) 100%
+		);
+	}
+
+	.AfroCard {
+		background: rgb(120, 93, 82);
+		background: linear-gradient(
+			180deg,
+			rgba(120, 93, 82, 1) 0%,
+			rgba(189, 145, 130, 1) 100%
+		);
+	}
+}
+
+.swiper-button-next {
+	background-image: url("./images/right-arrow.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center;
+}
+
+.swiper-button-next::after {
+	display: none;
+}
+
+.swiper-button-prev {
+	background-image: url("./images/left-arrow.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center;
+}
+
+.swiper-button-prev::after {
+	display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	top: 50% !important;
+}

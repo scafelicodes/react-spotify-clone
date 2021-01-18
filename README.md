@@ -1,3 +1,20 @@
+# Background
+
+A React based UI clone of Spotify (Desktop version) using SCSS and React Icons Kit. This mini application only includes three pages: Home, Search and Library. Main purpose of the project was to become more familiar with React.js and develop Front-end skills.
+
+# Project Screenshots
+
+![](screenshots/spotify-home-page.png)
+![](screenshots/spotify-search-page.png)
+![](screenshots/spotify-library-page.png)
+
+# Built With:
+
+1. React: A declarative, efficient, and flexible JavaScript library for building user interfaces.
+2. React Router: A declarative routing for React applications.
+3. SCSS: The most mature, stable, and powerful professional grade CSS extension language in the world.
+4. React Icons Kit: A library that provides popular icons for React applications.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

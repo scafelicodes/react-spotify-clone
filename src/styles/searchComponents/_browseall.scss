@@ -1,0 +1,98 @@
+.BrowseAll {
+	margin: 40px 0;
+}
+
+.Grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 120px;
+
+	&-item {
+		border-radius: 10px;
+		width: 100%;
+		background: grey;
+		margin-top: 2.4%;
+		color: $spotify-white;
+		font-size: 20px;
+		font-weight: 600;
+		padding: 20px;
+
+		cursor: pointer;
+
+		@media (min-width: 48rem) {
+			width: 49%;
+			&:nth-child(odd) {
+				background: grey;
+				margin-right: 2%;
+			}
+		}
+
+		@media (min-width: 62rem) {
+			width: 23.5%;
+			&:not(:nth-child(4n)) {
+				background: grey;
+				margin-right: 2%;
+			}
+		}
+
+		&:before {
+			content: "";
+			float: left;
+			padding-top: 100%;
+		}
+	}
+
+	.Var-1 {
+		background: rgb(158, 101, 27);
+		background: linear-gradient(
+			180deg,
+			rgba(158, 101, 27, 1) 0%,
+			rgba(229, 144, 34, 1) 100%
+		);
+	}
+
+	.Var-2 {
+		background: rgb(99, 120, 129);
+		background: linear-gradient(
+			180deg,
+			rgba(99, 120, 129, 1) 0%,
+			rgba(155, 189, 202, 1) 100%
+		);
+	}
+
+	.Var-3 {
+		background: rgb(48, 91, 78);
+		background: linear-gradient(
+			180deg,
+			rgba(48, 91, 78, 1) 0%,
+			rgba(71, 138, 119, 1) 100%
+		);
+	}
+
+	.Var-4 {
+		background: rgb(112, 98, 126);
+		background: linear-gradient(
+			180deg,
+			rgba(112, 98, 126, 1) 0%,
+			rgba(173, 149, 192, 1) 100%
+		);
+	}
+
+	.Var-5 {
+		background: rgb(158, 62, 34);
+		background: linear-gradient(
+			180deg,
+			rgba(158, 62, 34, 1) 0%,
+			rgba(248, 98, 53, 1) 100%
+		);
+	}
+
+	.Var-6 {
+		background: rgb(51, 97, 153);
+		background: linear-gradient(
+			180deg,
+			rgba(51, 97, 153, 1) 0%,
+			rgba(78, 149, 235, 1) 100%
+		);
+	}
+}
